@@ -1,0 +1,34 @@
+# Week 1
+# This file has small examples that are meant to be run individually
+#   in the Python interpreter or IDLE shell
+
+# text from Moby Dick
+
+from nltk.book import *
+text1
+sent1
+sent1text = 'Call me Ishmael.'
+
+# searching text
+text1.concordance('monstrous')
+text2.concordance('affection')
+
+text1.similar('monstrous')
+text2.similar('monstrous')
+text2.common_contexts(["monstrous", "very"])
+
+# Counting Vocabulary
+len(text3)
+sorted(set(text3))
+len(sorted(set(text3)))
+
+sorted(set(text3))[:30]
+
+len(set(text3)) / len(text3)
+
+text3.count("smote")
+100 * text3.count('smote')/len(text3)
+100 * text3.count('a')/len(text3)
+
+sixlettertokens = [w for w in text1 if len(w) >=6]
+len(sixlettertokens)
